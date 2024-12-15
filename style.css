@@ -1,0 +1,174 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2,
+  h3 {
+    color: #78b2d3;
+  }
+  
+  footer {
+    padding: 20px;
+    color: #bc78ad;
+    background-color: #e3ebec;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #c17bab;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  nav {
+    background-color: #1a3a7e;
+    padding: 5px;
+   
+    position: sticky;
+    top: 0;
+  }
+
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    list-style: none;
+  }
+  
+  nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(236, 212, 236);
+    transition: font-weight 0.3s ease;
+  }
+  
+  nav a:hover {
+    font-weight: bold;
+  }
+  
+  .profile header {
+    text-align: center;
+  }
+
+  .featured-image {
+    width: 100%;
+    max-height: 300px;
+
+    object-fit: cover;
+    object-position: center;
+  }
+  /* Jumbotron Section */
+  .jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #3e6697;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Cards and Layout */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    background: white;
+  }
+  
+  .featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .profile img {
+    max-width: 200px;
+    border-radius: 50%;
+  }
+  
+  /* Main Layout */
+  main {
+    display: flex;
+    gap: 1.5rem;
+    padding: 20px;
+  }
+  
+  #content {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  aside {
+    flex: 1;
+  }
+  
+  /* Profile Section */
+  .profile header {
+    text-align: center;
+  }
+  
+  .profile table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .profile th,
+  .profile td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 1200px) {
+    main {
+      flex-direction: column;
+    }
+  
+    aside {
+      align-self: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    main aside {
+      align-self: stretch;
+    }
+  
+    .jumbotron {
+      font-size: 18px;
+      padding: 40px;
+    }
+  
+    nav a {
+      font-size: 16px;
+    }
+  }
+  
